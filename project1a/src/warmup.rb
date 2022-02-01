@@ -14,7 +14,7 @@ end
 
 def isPalindrome(n)
     s = sprintf("%d", n)
-    for x in 0..s.length/2
+    for x in 0..s.length/2 - 1
         if s[x] != s[s.length-1-x]
             return false
         end
