@@ -13,6 +13,7 @@ class PublicTests < MiniTest::Test
         assert_equal([0, 1], fib(2))
         assert_equal([0, 1, 1], fib(3))
         assert_equal([0, 1, 1, 2, 3, 5, 8, 13, 21, 34], fib(10))
+        assert_equal([0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946], fib(22))
     end
 
     def test_public_ispalindrome
@@ -21,6 +22,7 @@ class PublicTests < MiniTest::Test
         assert_equal(false, isPalindrome(10))
         assert_equal(true, isPalindrome(101))
         assert_equal(false, isPalindrome(120210))
+        assert_equal(true, isPalindrome(1222221))
     end
 
     def test_public_nthmax
@@ -28,6 +30,7 @@ class PublicTests < MiniTest::Test
         assert_equal(2, nthmax(1, [3,2,1,0]))
         assert_equal(4, nthmax(2, [7,3,4,5]))
         assert_nil(nthmax(5, [1,2,3]))
+        assert_equal(177, nthmax(1, [12, 55, 177, 44, 19, 5469, 13]))
     end
 
     def test_public_freq
@@ -36,6 +39,7 @@ class PublicTests < MiniTest::Test
         assert_equal("a", freq("bbaaa"))
         assert_equal("s", freq("ssabcd"))
         assert_equal("x", freq("a12xxxxxyyyxyxyxy"))
+        assert_equal("o", freq("feel goood inc"))
     end
 
     def test_public_ziphash
@@ -55,9 +59,16 @@ class PublicTests < MiniTest::Test
     end
 
     def test_public_phonebook_add
-        assert_equal(true, @phonebook.add("John", "110-192-1862", false))
+        assert_equal(true, @phonebook.add("John", "110-192-1862", true))
         assert_equal(true, @phonebook.add("Jane", "220-134-1312", false))
         assert_equal(false, @phonebook.add("John", "110-192-1862", false))
+        assert_equal(false, @phonebook.add("Lucy", "110-192-186", false))
+        assert_equal(true, @phonebook.add("Lucy", "110-192-1865", false))
+        assert_equal(true, @phonebook2.add("Alice", "123-456-7890", false))
+        assert_equal(true, @phonebook2.add("Bob", "123-456-7890", false))
+        assert_equal(true, @phonebook2.add("Eve", "123-456-7890", true))
+        assert_equal(false, @phonebook2.add("Rob", "123-456-7890", true))
+        assert_equal(true, @phonebook2.add("Johnny B. Good", "123-456-7890", false))
     end
 
     def test_public_phonebook_lookup
