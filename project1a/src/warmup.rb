@@ -29,9 +29,9 @@ def nthmax(n, a)
     max = 0
     for x in 0..n
         max = 0
-        for x in a
-            if x > max
-                max = x
+        for y in a
+            if y > max
+                max = y
             end
         end
         a.delete(max)
@@ -44,7 +44,7 @@ def freq(s)
         return ""
     end
     count = Hash.new(0)
-    for x in 0..s.length
+    for x in 0..s.length - 1
         count[s[x]] = count[s[x]] + 1
     end
     max = 0
@@ -63,7 +63,7 @@ def zipHash(arr1, arr2)
         return nil
     end
     corr = Hash.new
-    for x in 0..arr1.length-1
+    for x in 0..arr1.length - 1
         corr[arr1[x]] = arr2[x]
     end
     return corr

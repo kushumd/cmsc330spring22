@@ -30,7 +30,7 @@ class PublicTests < MiniTest::Test
         assert_equal(2, nthmax(1, [3,2,1,0]))
         assert_equal(4, nthmax(2, [7,3,4,5]))
         assert_nil(nthmax(5, [1,2,3]))
-        assert_equal(12, nthmax(6, [12, 55, 177, 44, 19, 5469, 13]))
+        assert_equal(177, nthmax(1, [12, 55, 177, 44, 19, 5469, 13]))
     end
 
     def test_public_freq
