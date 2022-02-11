@@ -6,14 +6,23 @@ require_relative '../models/position'
 # Return nil on any error (validation error or file opening error)
 # If 5 valid ships added, return GameBoard; return nil otherwise
 def read_ships_file(path)
-    GameBoard.new 10, 10
+    ship_count = 0
+    GameBoard.new(10, 10)
 end
 
 
 # return Array of Position or nil
 # Returns nil on file open error
 def read_attacks_file(path)
-    [Position.new(1, 1)]
+    attacks = Array.new
+    lines = path.split("\n")
+    index = 0
+    for line in lines
+        line =~ /\(\d, \d\)$/
+        attacks[index] = Position.new($1, $2)
+        index += 1
+    end
+    return attacks
 end
 
 
