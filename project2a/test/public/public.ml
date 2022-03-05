@@ -99,6 +99,14 @@ let test_is_palindrome _ =
   assert_equal false (is_palindrome ["N"; "o"; "o"; "n"]) ~msg:"is_palindrome (3)";
   assert_equal false (is_palindrome ["O"; "C"; "A"; "M"; "L"]) ~msg:"is_palindrome (4)"
 
+let test_rotate _ =
+  assert_equal ["a"; "b"; "c"; "d"] (rotate 0 ["a"; "b"; "c"; "d"]) ~msg:"rotate (1)";
+  assert_equal ["b"; "c"; "d"; "a"] (rotate 1 ["a"; "b"; "c"; "d"]) ~msg:"rotate (1)";
+  assert_equal ["c"; "d"; "a"; "b"] (rotate 2 ["a"; "b"; "c"; "d"]) ~msg:"rotate (1)";
+  assert_equal ["d"; "a"; "b"; "c"] (rotate 3 ["a"; "b"; "c"; "d"]) ~msg:"rotate (1)";
+  assert_equal ["a"; "b"; "c"; "d"] (rotate 4 ["a"; "b"; "c"; "d"]) ~msg:"rotate (1)";
+  assert_equal ["b"; "c"; "d"; "a"] (rotate 5 ["a"; "b"; "c"; "d"]) ~msg:"rotate (1)";
+
 let suite =
   "public" >::: [
     "rev_tup" >:: test_rev_tup;
@@ -116,6 +124,7 @@ let suite =
     "combine" >:: test_combine;
     "merge" >:: test_merge; 
     "is_palindrome" >:: test_is_palindrome
+    "rotate" >:: test_rotate
   ]
 
 let _ = run_test_tt_main suite
