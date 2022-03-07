@@ -90,7 +90,7 @@ let public_int_tree_insert_and_mem _ =
   let root = int_insert 20 (int_insert 10 empty_int_tree) in
   let left = int_insert 9 (int_insert 5 root) in
   let middle = int_insert 15 (int_insert 13 left) in
-  let right = int_insert 29 (int_insert 21 middle) in
+  let right = int_insert 29 (int_insert 21 middle) in     
 
   assert_equal ~printer:string_of_bool true (int_mem 10 right);
   assert_equal ~printer:string_of_bool true (int_mem 15 right);

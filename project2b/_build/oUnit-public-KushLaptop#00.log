@@ -1,0 +1,131 @@
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Runner: processes
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Chooser: simple
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration suite_name = "public"
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration cache_filename = "/mnt/c/users/kusha/documents/github/personalcode/project2b/_build/oUnit-$(suite_name).cache"
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration run_gc_full_major = "true"
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration display = "true"
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration results_style_1_X = "false"
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration testdata_dir = "none"
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration health_check_interval = "1."
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration verbose = "false"
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration chooser = "simple"
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration output_html_dir = "none"
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration processes_kill_period = "5."
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration runner = "processes"
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration shards = "4"
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration processes_grace_period = "5."
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration log_encoding = "utf-8"
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration output_junit_file = "none"
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration ci = "false"
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Configuration output_file = "/mnt/c/users/kusha/documents/github/personalcode/project2b/_build/oUnit-$(suite_name)-$(shard_id).log"
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Using 4 workers maximum.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Starting worker number KushLaptop#01.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Worker KushLaptop#01 started.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Starting worker number KushLaptop#02.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Worker KushLaptop#02 started.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Starting worker number KushLaptop#03.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Worker KushLaptop#03 started.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Starting worker number KushLaptop#04.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Worker KushLaptop#04 started.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: 4 tests running: public:3:uniq, public:2:count_occ, public:1:is_present, public:0:is_elem.
+2022-03-07T04:45:58+00:00 KushLaptop#01 I: Start test public:0:is_elem.
+2022-03-07T04:45:58+00:00 KushLaptop#02 I: Start test public:1:is_present.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: 4 tests running: public:3:uniq, public:2:count_occ, public:1:is_present, public:0:is_elem.
+2022-03-07T04:45:58+00:00 KushLaptop#01 W: Skip test public:0:is_elem: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#02 W: Skip test public:1:is_present: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#03 I: Start test public:2:count_occ.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: 4 tests running: public:3:uniq, public:2:count_occ, public:1:is_present, public:0:is_elem.
+2022-03-07T04:45:58+00:00 KushLaptop#01 I: End test public:0:is_elem.
+2022-03-07T04:45:58+00:00 KushLaptop#02 I: End test public:1:is_present.
+2022-03-07T04:45:58+00:00 KushLaptop#03 W: Skip test public:2:count_occ: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#04 I: Start test public:3:uniq.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: 4 tests running: public:3:uniq, public:2:count_occ, public:1:is_present, public:0:is_elem.
+2022-03-07T04:45:58+00:00 KushLaptop#03 I: End test public:2:count_occ.
+2022-03-07T04:45:58+00:00 KushLaptop#04 W: Skip test public:3:uniq: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: 4 tests running: public:5:ap, public:4:assoc_list, public:3:uniq, public:2:count_occ.
+2022-03-07T04:45:58+00:00 KushLaptop#04 I: End test public:3:uniq.
+2022-03-07T04:45:58+00:00 KushLaptop#02 I: Start test public:4:assoc_list.
+2022-03-07T04:45:58+00:00 KushLaptop#01 I: Start test public:5:ap.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: 4 tests running: public:6:insert_and_max, public:5:ap, public:4:assoc_list, public:3:uniq.
+2022-03-07T04:45:58+00:00 KushLaptop#02 W: Skip test public:4:assoc_list: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#01 W: Skip test public:5:ap: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: 4 tests running: public:7:int_tree_insert_and_mem, public:6:insert_and_max, public:5:ap, public:4:assoc_list.
+2022-03-07T04:45:58+00:00 KushLaptop#02 I: End test public:4:assoc_list.
+2022-03-07T04:45:58+00:00 KushLaptop#01 I: End test public:5:ap.
+2022-03-07T04:45:58+00:00 KushLaptop#03 I: Start test public:6:insert_and_max.
+2022-03-07T04:45:58+00:00 KushLaptop#04 I: Start test public:7:int_tree_insert_and_mem.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: 4 tests running: public:7:int_tree_insert_and_mem, public:6:insert_and_max, public:5:ap, public:4:assoc_list.
+2022-03-07T04:45:58+00:00 KushLaptop#03 W: Skip test public:6:insert_and_max: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#04 W: Skip test public:7:int_tree_insert_and_mem: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: 4 tests running: public:9:tree_map_put_and_get, public:8:int_tree_insert_and_size, public:7:int_tree_insert_and_mem, public:6:insert_and_max.
+2022-03-07T04:45:58+00:00 KushLaptop#03 I: End test public:6:insert_and_max.
+2022-03-07T04:45:58+00:00 KushLaptop#04 I: End test public:7:int_tree_insert_and_mem.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: 4 tests running: public:9:tree_map_put_and_get, public:8:int_tree_insert_and_size, public:7:int_tree_insert_and_mem, public:6:insert_and_max.
+2022-03-07T04:45:58+00:00 KushLaptop#01 I: Start test public:8:int_tree_insert_and_size.
+2022-03-07T04:45:58+00:00 KushLaptop#02 I: Start test public:9:tree_map_put_and_get.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Still 4 tests running : public:11:scopes, public:10:var, public:9:tree_map_put_and_get, public:8:int_tree_insert_and_size.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: 4 tests running: public:11:scopes, public:10:var, public:9:tree_map_put_and_get, public:8:int_tree_insert_and_size.
+2022-03-07T04:45:58+00:00 KushLaptop#01 W: Skip test public:8:int_tree_insert_and_size: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#02 W: Skip test public:9:tree_map_put_and_get: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#04 I: Start test public:10:var.
+2022-03-07T04:45:58+00:00 KushLaptop#03 I: Start test public:11:scopes.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Still 4 tests running : public:11:scopes, public:10:var, public:9:tree_map_put_and_get, public:8:int_tree_insert_and_size.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: 4 tests running: public:11:scopes, public:10:var, public:9:tree_map_put_and_get, public:8:int_tree_insert_and_size.
+2022-03-07T04:45:58+00:00 KushLaptop#01 I: End test public:8:int_tree_insert_and_size.
+2022-03-07T04:45:58+00:00 KushLaptop#02 I: End test public:9:tree_map_put_and_get.
+2022-03-07T04:45:58+00:00 KushLaptop#04 W: Skip test public:10:var: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#03 E: Test public:11:scopes has failed.
+2022-03-07T04:45:58+00:00 KushLaptop#03 E: public_scopes (1)
+2022-03-07T04:45:58+00:00 KushLaptop#03 E: not equal in test public:11:scopes.
+2022-03-07T04:45:58+00:00 KushLaptop#03 E: Raised at OUnitAssert.assert_failure in file "src/lib/ounit2/advanced/oUnitAssert.ml", line 45, characters 2-27
+2022-03-07T04:45:58+00:00 KushLaptop#03 E: Called from Dune__exe__Public.public_scopes in file "test/public/public.ml", line 150, characters 2-57
+2022-03-07T04:45:58+00:00 KushLaptop#03 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2022-03-07T04:45:58+00:00 KushLaptop#03 E: 
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Still 4 tests running : public:11:scopes, public:10:var, public:9:tree_map_put_and_get, public:8:int_tree_insert_and_size.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: 4 tests running: public:11:scopes, public:10:var, public:9:tree_map_put_and_get, public:8:int_tree_insert_and_size.
+2022-03-07T04:45:58+00:00 KushLaptop#04 I: End test public:10:var.
+2022-03-07T04:45:58+00:00 KushLaptop#03 I: End test public:11:scopes.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Still 2 tests running : public:11:scopes, public:10:var.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: 2 tests running: public:11:scopes, public:10:var.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: 0 tests running: .
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Worker KushLaptop#01 has ended.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Worker KushLaptop#02 has ended.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Worker KushLaptop#04 has ended.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Worker KushLaptop#03 has ended.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Used 4 worker during test execution.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Run 3 tests with shard KushLaptop#04.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Run 3 tests with shard KushLaptop#01.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Run 3 tests with shard KushLaptop#02.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Run 3 tests with shard KushLaptop#03.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Check health of shard KushLaptop#04, 1 times.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Check health of shard KushLaptop#02, 2 times.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Check health of shard KushLaptop#01, 2 times.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Check health of shard KushLaptop#03, 1 times.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: ==============
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Summary:
+2022-03-07T04:45:58+00:00 KushLaptop#00 E: Test public:11:scopes has failed.
+2022-03-07T04:45:58+00:00 KushLaptop#00 E: public_scopes (1)
+2022-03-07T04:45:58+00:00 KushLaptop#00 E: not equal in test public:11:scopes.
+2022-03-07T04:45:58+00:00 KushLaptop#00 E: Raised at OUnitAssert.assert_failure in file "src/lib/ounit2/advanced/oUnitAssert.ml", line 45, characters 2-27
+2022-03-07T04:45:58+00:00 KushLaptop#00 E: Called from Dune__exe__Public.public_scopes in file "test/public/public.ml", line 150, characters 2-57
+2022-03-07T04:45:58+00:00 KushLaptop#00 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2022-03-07T04:45:58+00:00 KushLaptop#00 E: 
+2022-03-07T04:45:58+00:00 KushLaptop#00 W: Skip test public:10:var: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#00 W: Skip test public:9:tree_map_put_and_get: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#00 W: Skip test public:8:int_tree_insert_and_size: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#00 W: Skip test public:7:int_tree_insert_and_mem: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#00 W: Skip test public:6:insert_and_max: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#00 W: Skip test public:5:ap: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#00 W: Skip test public:4:assoc_list: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#00 W: Skip test public:3:uniq: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#00 W: Skip test public:2:count_occ: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#00 W: Skip test public:1:is_present: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#00 W: Skip test public:0:is_elem: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Ran: 12 tests in: 0.13 seconds.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Cases: 12.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Tried: 12.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Errors: 0.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Failures: 1.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Skip: 11.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Todo: 0.
+2022-03-07T04:45:58+00:00 KushLaptop#00 I: Timeout: 0.

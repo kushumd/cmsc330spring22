@@ -1,0 +1,12 @@
+2022-03-07T04:49:00+00:00 KushLaptop#04 I: Start test public:3:test_count_occ_reversed_same.
+2022-03-07T04:49:00+00:00 KushLaptop#04 I: 
+2022-03-07T04:49:00+00:00 KushLaptop#04 I: law test_count_occ_reversed_same: 1000 relevant cases (1000 total)
+2022-03-07T04:49:00+00:00 KushLaptop#04 I: 
+2022-03-07T04:49:00+00:00 KushLaptop#04 I: Test public:3:test_count_occ_reversed_same is successful.
+2022-03-07T04:49:00+00:00 KushLaptop#04 I: End test public:3:test_count_occ_reversed_same.
+2022-03-07T04:49:00+00:00 KushLaptop#04 I: Start test public:5:test_uniq_reversed_same.
+2022-03-07T04:49:01+00:00 KushLaptop#04 I: 
+2022-03-07T04:49:01+00:00 KushLaptop#04 I: law test_uniq_reversed_same: 1000 relevant cases (1000 total)
+2022-03-07T04:49:01+00:00 KushLaptop#04 I: 
+2022-03-07T04:49:01+00:00 KushLaptop#04 I: Test public:5:test_uniq_reversed_same is successful.
+2022-03-07T04:49:01+00:00 KushLaptop#04 I: End test public:5:test_uniq_reversed_same.

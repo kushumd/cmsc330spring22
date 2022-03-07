@@ -1,0 +1,15 @@
+2022-03-07T04:45:58+00:00 KushLaptop#03 I: Start test public:2:count_occ.
+2022-03-07T04:45:58+00:00 KushLaptop#03 W: Skip test public:2:count_occ: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#03 I: End test public:2:count_occ.
+2022-03-07T04:45:58+00:00 KushLaptop#03 I: Start test public:6:insert_and_max.
+2022-03-07T04:45:58+00:00 KushLaptop#03 W: Skip test public:6:insert_and_max: Test disabled.
+2022-03-07T04:45:58+00:00 KushLaptop#03 I: End test public:6:insert_and_max.
+2022-03-07T04:45:58+00:00 KushLaptop#03 I: Start test public:11:scopes.
+2022-03-07T04:45:58+00:00 KushLaptop#03 E: Test public:11:scopes has failed.
+2022-03-07T04:45:58+00:00 KushLaptop#03 E: public_scopes (1)
+2022-03-07T04:45:58+00:00 KushLaptop#03 E: not equal in test public:11:scopes.
+2022-03-07T04:45:58+00:00 KushLaptop#03 E: Raised at OUnitAssert.assert_failure in file "src/lib/ounit2/advanced/oUnitAssert.ml", line 45, characters 2-27
+2022-03-07T04:45:58+00:00 KushLaptop#03 E: Called from Dune__exe__Public.public_scopes in file "test/public/public.ml", line 150, characters 2-57
+2022-03-07T04:45:58+00:00 KushLaptop#03 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2022-03-07T04:45:58+00:00 KushLaptop#03 E: 
+2022-03-07T04:45:58+00:00 KushLaptop#03 I: End test public:11:scopes.
