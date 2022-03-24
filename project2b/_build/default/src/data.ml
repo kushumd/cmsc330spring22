@@ -109,7 +109,7 @@ let rec pop_scope t = match t with
   | Scope (a, b) -> (
     try
       Scope (a, pop_scope b)
-    with Failure f -> Scope (a, NoScope)
+    with Failure f -> NoScope
   )
   
 let rec add_var_aux n v l = match l with

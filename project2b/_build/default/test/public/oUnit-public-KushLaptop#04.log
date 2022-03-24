@@ -1,9 +1,0 @@
-2022-03-07T04:48:57+00:00 KushLaptop#04 I: Start test public:3:uniq.
-2022-03-07T04:48:57+00:00 KushLaptop#04 I: Test public:3:uniq is successful.
-2022-03-07T04:48:57+00:00 KushLaptop#04 I: End test public:3:uniq.
-2022-03-07T04:48:57+00:00 KushLaptop#04 I: Start test public:6:insert_and_max.
-2022-03-07T04:48:57+00:00 KushLaptop#04 I: Test public:6:insert_and_max is successful.
-2022-03-07T04:48:57+00:00 KushLaptop#04 I: End test public:6:insert_and_max.
-2022-03-07T04:48:57+00:00 KushLaptop#04 I: Start test public:10:var.
-2022-03-07T04:48:57+00:00 KushLaptop#04 I: Test public:10:var is successful.
-2022-03-07T04:48:57+00:00 KushLaptop#04 I: End test public:10:var.
