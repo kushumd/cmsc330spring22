@@ -1,0 +1,6 @@
+2022-04-06T03:58:34+00:00 KushLaptop#04 I: Start test public:3:nfa_to_dfa.
+2022-04-06T03:58:34+00:00 KushLaptop#04 W: Skip test public:3:nfa_to_dfa: Test disabled.
+2022-04-06T03:58:34+00:00 KushLaptop#04 I: End test public:3:nfa_to_dfa.
+2022-04-06T03:58:34+00:00 KushLaptop#04 I: Start test public:7:nfa_new_trans.
+2022-04-06T03:58:34+00:00 KushLaptop#04 W: Skip test public:7:nfa_new_trans: Test disabled.
+2022-04-06T03:58:34+00:00 KushLaptop#04 I: End test public:7:nfa_new_trans.

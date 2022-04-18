@@ -1,0 +1,6 @@
+2022-04-06T03:58:34+00:00 KushLaptop#03 I: Start test public:2:nfa_move.
+2022-04-06T03:58:34+00:00 KushLaptop#03 W: Skip test public:2:nfa_move: Test disabled.
+2022-04-06T03:58:34+00:00 KushLaptop#03 I: End test public:2:nfa_move.
+2022-04-06T03:58:34+00:00 KushLaptop#03 I: Start test public:6:nfa_new_states.
+2022-04-06T03:58:34+00:00 KushLaptop#03 W: Skip test public:6:nfa_new_states: Test disabled.
+2022-04-06T03:58:34+00:00 KushLaptop#03 I: End test public:6:nfa_new_states.

@@ -1,0 +1,9 @@
+2022-04-06T03:58:34+00:00 KushLaptop#01 I: Start test public:0:nfa_accept.
+2022-04-06T03:58:34+00:00 KushLaptop#01 W: Skip test public:0:nfa_accept: Test disabled.
+2022-04-06T03:58:34+00:00 KushLaptop#01 I: End test public:0:nfa_accept.
+2022-04-06T03:58:34+00:00 KushLaptop#01 I: Start test public:5:str_to_nfa.
+2022-04-06T03:58:34+00:00 KushLaptop#01 W: Skip test public:5:str_to_nfa: Test disabled.
+2022-04-06T03:58:34+00:00 KushLaptop#01 I: End test public:5:str_to_nfa.
+2022-04-06T03:58:34+00:00 KushLaptop#01 I: Start test public:9:regex_to_nfa.
+2022-04-06T03:58:34+00:00 KushLaptop#01 W: Skip test public:9:regex_to_nfa: Test disabled.
+2022-04-06T03:58:34+00:00 KushLaptop#01 I: End test public:9:regex_to_nfa.

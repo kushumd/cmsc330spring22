@@ -1,0 +1,9 @@
+2022-04-06T03:58:34+00:00 KushLaptop#02 I: Start test public:1:nfa_closure.
+2022-04-06T03:58:34+00:00 KushLaptop#02 I: Test public:1:nfa_closure is successful.
+2022-04-06T03:58:34+00:00 KushLaptop#02 I: End test public:1:nfa_closure.
+2022-04-06T03:58:34+00:00 KushLaptop#02 I: Start test public:4:re_to_nfa.
+2022-04-06T03:58:34+00:00 KushLaptop#02 W: Skip test public:4:re_to_nfa: Test disabled.
+2022-04-06T03:58:34+00:00 KushLaptop#02 I: End test public:4:re_to_nfa.
+2022-04-06T03:58:34+00:00 KushLaptop#02 I: Start test public:8:nfa_new_finals.
+2022-04-06T03:58:34+00:00 KushLaptop#02 W: Skip test public:8:nfa_new_finals: Test disabled.
+2022-04-06T03:58:34+00:00 KushLaptop#02 I: End test public:8:nfa_new_finals.
