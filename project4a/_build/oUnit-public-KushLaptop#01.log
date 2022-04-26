@@ -1,0 +1,37 @@
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: Start test public:0:public_nothing.
+2022-04-26T04:52:47+00:00 KushLaptop#01 W: Skip test public:0:public_nothing: Test disabled.
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: End test public:0:public_nothing.
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: Start test public:4:public_expr_apply.
+2022-04-26T04:52:47+00:00 KushLaptop#01 W: Skip test public:4:public_expr_apply: Test disabled.
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: End test public:4:public_expr_apply.
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: Start test public:8:public_expr_minus_one.
+2022-04-26T04:52:47+00:00 KushLaptop#01 W: Skip test public:8:public_expr_minus_one: Test disabled.
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: End test public:8:public_expr_minus_one.
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: Start test public:12:public_expr_simple_equal.
+2022-04-26T04:52:47+00:00 KushLaptop#01 E: Test public:12:public_expr_simple_equal exited with an error.
+2022-04-26T04:52:47+00:00 KushLaptop#01 E: P4a.TokenTypes.InvalidInputException("bad primary") in test public:12:public_expr_simple_equal.
+2022-04-26T04:52:47+00:00 KushLaptop#01 E: Raised at P4a__Parser.parse_expr.parse_primary in file "src/parser.ml", line 115, characters 9-52
+2022-04-26T04:52:47+00:00 KushLaptop#01 E: Called from P4a__Parser.parse_expr.parse_call in file "src/parser.ml", line 108, characters 22-38
+2022-04-26T04:52:47+00:00 KushLaptop#01 E: Called from P4a__Parser.parse_expr.parse_concat in file "src/parser.ml", line 100, characters 39-55
+2022-04-26T04:52:47+00:00 KushLaptop#01 E: Called from P4a__Parser.parse_expr.parse_multiply in file "src/parser.ml", line 96, characters 41-58
+2022-04-26T04:52:47+00:00 KushLaptop#01 E: Called from P4a__Parser.parse_expr.parse_add in file "src/parser.ml", line 92, characters 36-55
+2022-04-26T04:52:47+00:00 KushLaptop#01 E: Called from P4a__Parser.parse_expr.parse_relation in file "src/parser.ml", line 86, characters 41-55
+2022-04-26T04:52:47+00:00 KushLaptop#01 E: Called from P4a__Parser.parse_expr.parse_equality in file "src/parser.ml", line 82, characters 41-60
+2022-04-26T04:52:47+00:00 KushLaptop#01 E: Called from P4a__Parser.parse_expr.parse_and in file "src/parser.ml", line 79, characters 36-55
+2022-04-26T04:52:47+00:00 KushLaptop#01 E: Called from P4a__Parser.parse_expr.parse_or in file "src/parser.ml", line 76, characters 35-49
+2022-04-26T04:52:47+00:00 KushLaptop#01 E: Called from Dune__exe__Public.public_expr_simple_equal in file "test/public/public.ml", line 98, characters 16-49
+2022-04-26T04:52:47+00:00 KushLaptop#01 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2022-04-26T04:52:47+00:00 KushLaptop#01 E: 
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: End test public:12:public_expr_simple_equal.
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: Start test public:16:public_expr_simple_sub.
+2022-04-26T04:52:47+00:00 KushLaptop#01 W: Skip test public:16:public_expr_simple_sub: Test disabled.
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: End test public:16:public_expr_simple_sub.
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: Start test public:20:public_expr_single_fun.
+2022-04-26T04:52:47+00:00 KushLaptop#01 W: Skip test public:20:public_expr_single_fun: Test disabled.
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: End test public:20:public_expr_single_fun.
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: Start test public:24:public_expr_single_not.
+2022-04-26T04:52:47+00:00 KushLaptop#01 W: Skip test public:24:public_expr_single_not: Test disabled.
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: End test public:24:public_expr_single_not.
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: Start test public:28:public_err_def_not_top_level.
+2022-04-26T04:52:47+00:00 KushLaptop#01 W: Skip test public:28:public_err_def_not_top_level: Test disabled.
+2022-04-26T04:52:47+00:00 KushLaptop#01 I: End test public:28:public_err_def_not_top_level.

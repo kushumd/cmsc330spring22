@@ -100,4 +100,4 @@ let rec nfa_to_dfa_step (nfa: ('q,'s) nfa_t) (dfa: ('q list, 's) nfa_t) (work: '
 
 let nfa_to_dfa (nfa: ('q,'s) nfa_t) : ('q list, 's) nfa_t = nfa_to_dfa_step nfa {sigma = nfa.sigma; qs = [e_closure nfa [nfa.q0]]; q0 = e_closure nfa [nfa.q0]; fs = []; delta = []} [e_closure nfa [nfa.q0]]
 
-(* Fixed new trans, now fix accept and DFA*)
+(* I'm sorry my code sucks*)

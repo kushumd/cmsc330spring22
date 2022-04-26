@@ -26,21 +26,6 @@ let fresh =
 (* Part 3: Regular Expressions *)
 (*******************************)
 
-(* helper function: contains checks if a list contains a certain value *)
-  let rec contains lst v = match lst with
-| [] -> false
-| a::b -> if v = a then true else contains b v 
-
-let print_list f lst = 
-  let rec print_elements = function
-    | [] -> ()
-    | h::t -> f h; print_string ";"; print_elements t
-  in
-  print_string "[";
-  print_elements lst;
-  print_string "]";;
-
-(*cddd* vs c(dd)d* *)
 let rec regexp_to_nfa_aux (regexp: regexp_t) (previous: int) (current: int) (fin: bool) (nfa: (int, char) nfa_t) : (int, char) nfa_t = match regexp with 
     | Empty_String -> print_string " epsilon "; {sigma = nfa.sigma; qs = nfa.qs @ [current]; q0 = nfa.q0; fs = if fin then Sets.union nfa.fs [current] else nfa.fs; delta = nfa.delta @ [(previous, None, current)]}
     | Char (a) -> print_string " char "; print_char a;{sigma = Sets.union nfa.sigma [a]; qs = nfa.qs @ [current]; q0 = nfa.q0; fs = if fin then Sets.union nfa.fs [current] else nfa.fs; delta = nfa.delta @ [(previous, Some a, current)]}
