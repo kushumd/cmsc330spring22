@@ -24,7 +24,8 @@ let fresh =
 
 (*******************************)
 (* Part 3: Regular Expressions *)
-(*******************************)
+(*******************************).
++0/
 
 let rec regexp_to_nfa_aux (regexp: regexp_t) (previous: int) (current: int) (fin: bool) (nfa: (int, char) nfa_t) : (int, char) nfa_t = match regexp with 
     | Empty_String -> print_string " epsilon "; {sigma = nfa.sigma; qs = nfa.qs @ [current]; q0 = nfa.q0; fs = if fin then Sets.union nfa.fs [current] else nfa.fs; delta = nfa.delta @ [(previous, None, current)]}

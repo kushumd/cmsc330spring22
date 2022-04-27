@@ -1,0 +1,24 @@
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: Start test public:1:public_mutop_pi_def.
+2022-04-27T03:20:31+00:00 KushLaptop#02 W: Skip test public:1:public_mutop_pi_def: Test disabled.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: End test public:1:public_mutop_pi_def.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: Start test public:4:public_expr_apply.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: Test public:4:public_expr_apply is successful.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: End test public:4:public_expr_apply.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: Start test public:8:public_expr_minus_one.
+2022-04-27T03:20:31+00:00 KushLaptop#02 W: Skip test public:8:public_expr_minus_one: Test disabled.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: End test public:8:public_expr_minus_one.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: Start test public:13:public_expr_simple_mult.
+2022-04-27T03:20:31+00:00 KushLaptop#02 W: Skip test public:13:public_expr_simple_mult: Test disabled.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: End test public:13:public_expr_simple_mult.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: Start test public:16:public_expr_single_and.
+2022-04-27T03:20:31+00:00 KushLaptop#02 W: Skip test public:16:public_expr_single_and: Test disabled.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: End test public:16:public_expr_single_and.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: Start test public:20:public_expr_single_let.
+2022-04-27T03:20:31+00:00 KushLaptop#02 W: Skip test public:20:public_expr_single_let: Test disabled.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: End test public:20:public_expr_single_let.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: Start test public:23:public_expr_single_number.
+2022-04-27T03:20:31+00:00 KushLaptop#02 W: Skip test public:23:public_expr_single_number: Test disabled.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: End test public:23:public_expr_single_number.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: Start test public:29:public_expr_shadow.
+2022-04-27T03:20:31+00:00 KushLaptop#02 W: Skip test public:29:public_expr_shadow: Test disabled.
+2022-04-27T03:20:31+00:00 KushLaptop#02 I: End test public:29:public_expr_shadow.

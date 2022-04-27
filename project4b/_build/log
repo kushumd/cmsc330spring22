@@ -1,0 +1,128 @@
+# dune runtest -f
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root:
+# /mnt/c/users/kusha/documents/github/cmsc330/personalcode/project4b
+# Auto-detected concurrency: 8
+$ /home/kushanand/.opam/4.12.0/bin/ocamlc.opt -config > /tmp/dune_3f4527_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Release
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = Some External "/home/kushanand/.opam/4.12.0/lib/toplevel"
+#  ; ocaml_bin = External "/home/kushanand/.opam/4.12.0/bin"
+#  ; ocaml = Ok External "/home/kushanand/.opam/4.12.0/bin/ocaml"
+#  ; ocamlc = External "/home/kushanand/.opam/4.12.0/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/home/kushanand/.opam/4.12.0/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/home/kushanand/.opam/4.12.0/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/home/kushanand/.opam/4.12.0/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/home/kushanand/.opam/4.12.0/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/home/kushanand/.opam/4.12.0/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" :
+#            "/mnt/c/users/kusha/documents/github/cmsc330/personalcode/project4b"
+#        ; "INSIDE_DUNE" :
+#            "/mnt/c/users/kusha/documents/github/cmsc330/personalcode/project4b/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/mnt/c/users/kusha/documents/github/cmsc330/personalcode/project4b/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/mnt/c/users/kusha/documents/github/cmsc330/personalcode/project4b/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/mnt/c/users/kusha/documents/github/cmsc330/personalcode/project4b/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_path = [ External "/home/kushanand/.opam/4.12.0/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.12.0"
+#      ; standard_library_default = "/home/kushanand/.opam/4.12.0/lib/ocaml"
+#      ; standard_library = "/home/kushanand/.opam/4.12.0/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-ldl"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; native_c_libraries = [ "-lm"; "-ldl" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X029"
+#      ; cmi_magic_number = "Caml1999I029"
+#      ; cmo_magic_number = "Caml1999O029"
+#      ; cma_magic_number = "Caml1999A029"
+#      ; cmx_magic_number = "Caml1999Y029"
+#      ; cmxa_magic_number = "Caml1999Z029"
+#      ; ast_impl_magic_number = "Caml1999M029"
+#      ; ast_intf_magic_number = "Caml1999N029"
+#      ; cmxs_magic_number = "Caml1999D029"
+#      ; cmt_magic_number = "Caml1999T029"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /home/kushanand/.opam/4.12.0/bin/ocamldep.opt -modules -impl src/eval.ml) > _build/default/src/.p4b.objs/eval.ml.d
+$ (cd _build/default && /home/kushanand/.opam/4.12.0/bin/ocamlopt.opt -w -40 -g -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml -no-alias-deps -open P4b -o src/.p4b.objs/native/p4b__Eval.cmx -c -impl src/eval.ml)
+$ (cd _build/default && /home/kushanand/.opam/4.12.0/bin/ocamlopt.opt -w -40 -g -I test/pbt/.pbt.eobjs/byte -I test/pbt/.pbt.eobjs/native -I /home/kushanand/.opam/4.12.0/lib/oUnit -I /home/kushanand/.opam/4.12.0/lib/ounit2 -I /home/kushanand/.opam/4.12.0/lib/ounit2/advanced -I /home/kushanand/.opam/4.12.0/lib/qcheck -I /home/kushanand/.opam/4.12.0/lib/qcheck-core -I /home/kushanand/.opam/4.12.0/lib/qcheck-core/runner -I /home/kushanand/.opam/4.12.0/lib/qcheck-ounit -I /home/kushanand/.opam/4.12.0/lib/seq -I /home/kushanand/.opam/4.12.0/lib/stdlib-shims -I src/.p4b.objs/byte -I src/.p4b.objs/native -I test/.testUtils.objs/byte -I test/.testUtils.objs/native -intf-suffix .ml -no-alias-deps -o test/pbt/.pbt.eobjs/native/dune__exe__Pbt.cmx -c -impl test/pbt/pbt.ml)
+$ (cd _build/default && /home/kushanand/.opam/4.12.0/bin/ocamlopt.opt -w -40 -g -a -o src/p4b.cmxa src/.p4b.objs/native/p4b.cmx src/.p4b.objs/native/p4b__MicroCamlTypes.cmx src/.p4b.objs/native/p4b__TokenTypes.cmx src/.p4b.objs/native/p4b__Utils.cmx src/.p4b.objs/native/p4b__Parser.cmx src/.p4b.objs/native/p4b__Lexer.cmx src/.p4b.objs/native/p4b__Eval.cmx)
+$ (cd _build/default && /home/kushanand/.opam/4.12.0/bin/ocamlopt.opt -w -40 -g -o test/public/public.exe /home/kushanand/.opam/4.12.0/lib/ocaml/str.cmxa -I /home/kushanand/.opam/4.12.0/lib/ocaml src/p4b.cmxa /home/kushanand/.opam/4.12.0/lib/ocaml/unix.cmxa -I /home/kushanand/.opam/4.12.0/lib/ocaml -I /home/kushanand/.opam/4.12.0/lib/ocaml /home/kushanand/.opam/4.12.0/lib/stdlib-shims/stdlib_shims.cmxa /home/kushanand/.opam/4.12.0/lib/ounit2/advanced/oUnitAdvanced.cmxa /home/kushanand/.opam/4.12.0/lib/ounit2/oUnit.cmxa test/testUtils.cmxa test/public/.public.eobjs/native/dune__exe__Public.cmx)
+$ (cd _build/default && /home/kushanand/.opam/4.12.0/bin/ocamlopt.opt -w -40 -g -o test/pbt/pbt.exe /home/kushanand/.opam/4.12.0/lib/ocaml/str.cmxa -I /home/kushanand/.opam/4.12.0/lib/ocaml src/p4b.cmxa /home/kushanand/.opam/4.12.0/lib/ocaml/unix.cmxa -I /home/kushanand/.opam/4.12.0/lib/ocaml -I /home/kushanand/.opam/4.12.0/lib/ocaml /home/kushanand/.opam/4.12.0/lib/stdlib-shims/stdlib_shims.cmxa /home/kushanand/.opam/4.12.0/lib/ounit2/advanced/oUnitAdvanced.cmxa /home/kushanand/.opam/4.12.0/lib/ounit2/oUnit.cmxa /home/kushanand/.opam/4.12.0/lib/qcheck-core/qcheck_core.cmxa /home/kushanand/.opam/4.12.0/lib/qcheck-core/runner/qcheck_runner.cmxa /home/kushanand/.opam/4.12.0/lib/qcheck-ounit/qcheck_ounit.cmxa /home/kushanand/.opam/4.12.0/lib/qcheck/qcheck.cmxa test/testUtils.cmxa test/pbt/.pbt.eobjs/native/dune__exe__Pbt.cmx)
+$ (cd _build/default/test/public && ./public.exe)
+> ..............................
+> Ran: 30 tests in: 0.18 seconds.
+> OK
+$ (cd _build/default/test/pbt && ./pbt.exe)
+> ....
+> Ran: 4 tests in: 0.65 seconds.
+> OK

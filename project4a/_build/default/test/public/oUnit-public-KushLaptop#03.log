@@ -1,0 +1,24 @@
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Start test public:2:public_mutop_simple_def_and_let.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Test public:2:public_mutop_simple_def_and_let is successful.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: End test public:2:public_mutop_simple_def_and_let.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Start test public:6:public_expr_let_if.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Test public:6:public_expr_let_if is successful.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: End test public:6:public_expr_let_if.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Start test public:10:public_expr_sub1.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Test public:10:public_expr_sub1 is successful.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: End test public:10:public_expr_sub1.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Start test public:14:public_expr_simple_div.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Test public:14:public_expr_simple_div is successful.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: End test public:14:public_expr_simple_div.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Start test public:16:public_expr_simple_sub.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Test public:16:public_expr_simple_sub is successful.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: End test public:16:public_expr_simple_sub.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Start test public:19:public_expr_single_bool.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Test public:19:public_expr_single_bool is successful.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: End test public:19:public_expr_single_bool.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Start test public:23:public_expr_single_notequal.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Test public:23:public_expr_single_notequal is successful.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: End test public:23:public_expr_single_notequal.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Start test public:27:public_expr_single_string.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: Test public:27:public_expr_single_string is successful.
+2022-04-26T21:09:16+00:00 KushLaptop#03 I: End test public:27:public_expr_single_string.

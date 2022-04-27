@@ -65,7 +65,7 @@ let rec parse_expr toks =
   | Some Tok_ID(x) -> let toks2 = match_many toks [Tok_Let; Tok_ID(x); Tok_Equal] in
     let t1, e1 = parse_expr toks2 in let toks3 = match_token t1 Tok_In in
     let t2, e2 = parse_expr toks3 in (t2, Let(x, false, e1, e2))
-  | _ -> raise (InvalidInputException "bad let expression") 
+  | _ -> raise (InvalidInputException "bad let expression")
   and parse_fun toks = match lookahead_many toks 1 with 
   | Some Tok_ID (x) -> let toks2 = match_many toks [Tok_Fun; Tok_ID(x); Tok_Arrow] in let t1, e1 = parse_expr toks2 in (t1, Fun(x, e1))
   | _ -> raise (InvalidInputException "bad fun expression")
@@ -103,15 +103,19 @@ let rec parse_expr toks =
   and parse_unary toks = match lookahead toks with 
   | Some Tok_Not -> let toks2 = match_token toks Tok_Not in let t1, e1 = parse_unary toks2 in (t1, Not(e1))
   | _ -> parse_call toks
-  and parse_call toks = let t1, e1 = parse_primary toks in match t1 with 
-  | [] -> (t1, e1)
-  | _ -> let t2, e2 = parse_primary t1 in (t2, FunctionCall(e1, e2))
+  and parse_call toks = let t1, e1 = parse_primary toks in match lookahead t1 with 
+  | Some Tok_Int(_) -> let t2, e2 = parse_primary t1 in (t2, FunctionCall(e1, e2))
+  | Some Tok_Bool(_) -> let t2, e2 = parse_primary t1 in (t2, FunctionCall(e1, e2))
+  | Some Tok_String(_) -> let t2, e2 = parse_primary t1 in (t2, FunctionCall(e1, e2))
+  | Some Tok_ID(_) -> let t2, e2 = parse_primary t1 in (t2, FunctionCall(e1, e2))
+  | Some Tok_LParen -> let t2, e2 = parse_primary t1 in (t2, FunctionCall(e1, e2))
+  | _ -> (t1, e1)
   and parse_primary toks = match lookahead toks with 
   | Some Tok_Int(x) -> let toks2 = match_token toks (Tok_Int(x)) in (toks2, Value(Int(x)))
   | Some Tok_Bool(x) -> let toks2 = match_token toks (Tok_Bool(x)) in (toks2, Value(Bool(x)))
   | Some Tok_String(x) -> let toks2 = match_token toks (Tok_String(x)) in (toks2, Value(String(x)))
   | Some Tok_ID(x) -> let toks2 = match_token toks (Tok_ID(x)) in (toks2, ID(x))
-  | Some Tok_RParen -> let toks2 = match_token toks Tok_RParen in let t1, e1 = parse_expr toks2 in let toks3 = match_token t1 Tok_LParen in (toks3, e1)
+  | Some Tok_LParen -> let toks2 = match_token toks Tok_LParen in let t1, e1 = parse_expr toks2 in let toks3 = match_token t1 Tok_RParen in (toks3, e1)
   | _ -> raise (InvalidInputException "bad primary")
   in
   match lookahead toks with 
@@ -123,4 +127,13 @@ let rec parse_expr toks =
 
 (* Part 3: Parsing mutop *)
 
-let rec parse_mutop toks = failwith "unimplemented"
+let parse_mutop toks = 
+  let parse_def toks = match lookahead_many toks 1 with 
+  | Some Tok_ID(x) -> let toks2 = match_many toks [Tok_Def; Tok_ID(x); Tok_Equal] in let t1, e1 = parse_expr toks2 in let toks3 = match_token t1 Tok_DoubleSemi in (toks3, Def(x, e1))
+  | _ -> raise (InvalidInputException "bad def")
+  and parse_mexpr toks = let t1, e1 = parse_expr toks in let toks2 = match_token t1 Tok_DoubleSemi in (toks2, Expr(e1))
+  in (*raise (InvalidInputException (Printf.sprintf "%s" (string_of_list string_of_token toks)))*)
+  match lookahead toks with 
+  | Some Tok_Def -> parse_def toks
+  | Some Tok_DoubleSemi -> ([], NoOp)
+  | _ -> parse_mexpr toks
