@@ -1,6 +1,6 @@
 # Project 5: Stark Suit Repair
 
-Due: May 9, 2022 at 11:59pm (Late May 10, with *10% penalty*)
+Due: May 10, 2022 at 11:59pm (Late May 11, with *10% penalty*)
 
 Points: 49 public, 51 semipublic
 
@@ -11,8 +11,6 @@ Points: 49 public, 51 semipublic
 **This is an individual assignment. You must work on this project alone.**
 
 For this project you are allowed to use the library functions found in `std`, including `Vec`, `String`, `collections::HashMap`, and `Box`.
-
-However, you may **NOT** use `collections::BinaryHeap` for your implementation.  You must create your own.
 
 Also, you may not use any external crates for your implementation.
 
@@ -158,7 +156,7 @@ longest_sequence(&"") == None
 
 In this part, you will be responsible for creating a linked list that can be read from multiple threads.
 
-You may have implemented linked lists in C before. This exercise will be radically different, as functional style lists may share nodes (as in ocaml). While you will not manage memory directly (call `malloc`, `free`), you must consider how to share memory safely while upholding rust's invariants. By default, the borrow checker enforces memory is only accessible to one thread at a time. BTW, any usage of manual memory management (pointers, calling the allocator).
+You may have implemented linked lists in C before. This exercise will be radically different, as functional style lists may share nodes (as in ocaml). While you will not manage memory directly (call `malloc`, `free`), you must consider how to share memory safely while upholding rust's invariants. By default, the borrow checker enforces memory is only accessible to one thread at a time. 
 
 The list and list node types are mostly given to you. The challenge is to figure out what links between nodes look like. In C, these would be pointers. In garbage collected languages, these would transparently be references.
 
@@ -168,15 +166,15 @@ Unlike C or a garbage collected language, you're code will mostly fail to compil
 
 #### Functions
 
-* `pub fn peek(&self) -> Option<Component>`
+* `pub fn peek(&self) -> Option<Armor>`
 
 This function returns (a copy of) the element at the head of the list, assuming the list is not empty. Otherwise, we should return `None` to indicate the list is empty.
 
-* `pub fn pop(&mut self) -> Option<Component>`
+* `pub fn pop(&mut self) -> Option<Armor>`
 
 This method removes and returns the first element of the list. Be careful to consider how to handle the case where this node is shared amongst other lists.
 
-* `pub fn push(&mut self, component: Component) -> ()`
+* `pub fn push(&mut self, component: Armor) -> ()`
 
 This method adds an element to the head end of the list. Be careful to consider the case where other lists may be sharing any preexisting head node. Pushing to this list must not modify any sister lists that share other nodes. We return nothing.
 
@@ -192,9 +190,17 @@ Is compatible checks if the versions of the various armor pieces match the versi
 
 * `fn repair(&mut self)`
 
-This method is a bit tricky. Its the only one that modifies data inside lists. All armor pieces of components with 2 fields (damage and power level) should be restored to 100 power and made undamaged. For example, a damaged helmet (`Helmet(true)`) should not be repaired. But a damaged chest piece (`ChestPiece(true, 46)`) should be repaired to `ChestPiece(false, 100)`.
+This method is a bit tricky. Its the only one that modifies data inside lists. All armor pieces of components with *2* fields (damage and power level) should be restored to 100 power and made undamaged. You should only modify the armor if and only if the damaged field is true. Armor pieces that are not damaged, but have low power level should remain unmodified.
 
 You need to figure out how to mutate pieces of armor without affecting what other threads are *currently* seeing. For example, say we have 2 threads (t1 and t2), each holding a list (l1 and l2). l1 contains armor pieces a and b, while l2 contains b only. If l1 is reading a, l2 should be free to modify / repair b. If another thread is reading / writing to an armor piece we are trying to access (read / write), we should immediately panic (similar to throwing an exception). For example, if t1 is reading b while we try to repair, theres nothing we can do. We should not wait for other threads to finish their turn. In the previous example, if t1 was accessing b, while t2 tried to repair it, t1 should panic.
+
+**Examples**
+
+```
+Helmet(true) -> Helmet(true)
+ChestPiece(true, 46) -> ChestPiece(false, 100)
+ChestPiece(false, 73) -> ChestPiece(false, 73)
+```
 
 ### Part 4: Communicator
 
